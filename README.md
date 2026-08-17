@@ -24,14 +24,21 @@ A lightweight CLI application that fetches daily astronomical images from NASA's
 git clone git@github.com:qweezq/nasa-space-voyager.git
 cd nasa-space-voyager
 
-# 2. Setup environment
+# 2. Setup environment and setting API Key
+Linux / macOS:
+
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-
-# 3. Set API Key
 export NASA_API_KEY="your_api_key"
 
-# 4. Run
+Windows(Powershell):
+
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+$env:NASA_API_KEY="your_api_key"    
+
+# 3. Run
 python3 main.py
 ```
