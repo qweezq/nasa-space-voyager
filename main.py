@@ -9,8 +9,7 @@ from converter import bytes_to_ascii
 color_theme = Theme({
     "info": "cyan",
     "warning": "yellow",
-    "error": "bold red",
-    "success": "bold green"
+    "error": "bold red"
 })
 
 def main():
