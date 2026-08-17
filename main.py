@@ -16,8 +16,8 @@ color_theme = Theme({
 def main():
     console = Console(theme=color_theme)
 
-    API_key = os.getenv("NASA_API_KEY", "DEMO_KEY")
-    client = NasaClient(API_key)
+    api_key = os.getenv("NASA_API_KEY", "DEMO_KEY")
+    client = NasaClient(api_key)
 
     console.print(Panel.fit(
         "[bold cyan]NASA SPACE VOYAGER[/bold cyan]",
@@ -27,7 +27,7 @@ def main():
 
     while True:
         console.print("\n[info]Available commands:[/info] [white]'YYYY-MM-DD', 'exit', Enter (today photo)[/white]")
-        user_input = Prompt.ask("[bold]Enter you request[/bold]").strip().lower()
+        user_input = Prompt.ask("[bold]Enter your request[/bold]").strip().lower()
 
         if user_input == 'exit':
             console.print("[warning]Bye! You should listen to a song called “Voyager” written by an author from the CIS[/warning]")

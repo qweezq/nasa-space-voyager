@@ -5,6 +5,8 @@ from rich.text import Text
 def bytes_to_ascii(image_bytes: bytes, target_width: int = 60) -> Text:
     img = Image.open(BytesIO(image_bytes))
 
+    img = img.convert("RGB")
+
     ratio = img.height / img.width
     target_height = int(target_width * ratio * 0.5)
 

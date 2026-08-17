@@ -10,11 +10,11 @@ class NasaClient:
         if date:
             params["date"] = date
 
-        response = requests.get(self.base_url, params=params)
+        response = requests.get(self.base_url, params=params, timeout=15)
         response.raise_for_status()
         return response.json()
 
     def get_image_bytes(self, url: str) -> bytes:
-        response = requests.get(url)
+        response = requests.get(url, timeout=30)
         response.raise_for_status()
         return response.content

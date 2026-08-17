@@ -15,7 +15,10 @@ A lightweight CLI application that fetches daily astronomical images from NASA's
 
 - **Python 3.10+**
 - **Libraries:** `rich`, `Pillow`, `requests`
-- **Environment:** Ubuntu (WSL 2)
+- **Platform:** Cross-platform (Linux, Windows, macOS)
+  
+## 🔑 API Key
+- You can get a free NASA API key in 10 seconds at [api.nasa.gov](https://api.nasa.gov/). If not provided, the application will automatically fall back to the public `DEMO_KEY`.
 
 ## 🚀 Quick Start
 
