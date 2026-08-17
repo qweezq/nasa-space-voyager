@@ -15,7 +15,6 @@ def bytes_to_ascii(image_bytes: bytes, target_width: int = 60) -> Text:
         for x in range(target_width):        
             r, g, b = img.getpixel((x, y))
             result.append("█", style=f"rgb({r},{g},{b})") 
-            # getting pixels and adding them to result
         result.append("\n")
 
     return result

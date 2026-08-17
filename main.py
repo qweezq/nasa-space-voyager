@@ -59,7 +59,7 @@ def main():
             ))
         except Exception as e:
             console.print(f"[error]Error:[/error] {e}")
-            console.print("[info]Check date format or API-key, may be the problems this connection(try to change ip).[/info]")
+            console.print("[info]Check date format or API-key, may be the problems with connection.[/info]")
 
 if __name__ == "__main__":
     main()
